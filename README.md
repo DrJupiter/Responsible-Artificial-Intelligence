@@ -81,11 +81,15 @@ Explainable AI (XAI) addresses issues of transparency and trust in AI by providi
    - **Model Used:** Pretrained VGG16 convolutional network.
    - **Approach:** Standard gradient-based saliency maps to highlight important regions in images.
    - **Results:** Saliency maps emphasized the birds, particularly their heads, indicating relevant features for classification.
+![image](https://github.com/user-attachments/assets/0031133e-b028-4236-8406-6d4807f7b0ec)
+
 
 2. **Prototype-based Bottleneck Models (Proto-PNet):**
    - **Model Used:** Proto-PNet based on VGG19, trained on the CUB dataset.
    - **Approach:** Generates prototypes to identify meaningful features such as bird tails, heads, and colors.
    - **Results:** Prototypes successfully highlighted distinguishable features, though some irrelevant features like background were also identified.
+  
+![image](https://github.com/user-attachments/assets/6b53363f-6a9f-4e24-8d4a-f378103ad096)
 
 **Comparison of Methods:**
 - **Saliency Maps:** Provide directionality for increasing class likelihood, visualized as highlighted image regions.
