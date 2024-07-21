@@ -129,9 +129,15 @@ The MNIST dataset contains 70,000 grayscale images of handwritten digits (0-9), 
    - The model exhibited overfitting, with Mean Squared Error (MSE) on the test data logged after each epoch.
    - Higher epsilon levels showed significant impact on MSE.
 
+![image](https://github.com/user-attachments/assets/740700b6-65c1-4423-9789-54cf19136693)
+
+
 2. **Classification:**
    - The model's accuracy on the test data dropped significantly with any ϵ > 0, showing high sensitivity to noise.
    - Cross-entropy loss was used as the training metric, logged every 10K steps.
+
+![image](https://github.com/user-attachments/assets/158e1f02-2537-4b21-8d13-f9874fc251bc)
+
 
 **Conclusion:**
 - **Classification Task:** Highly sensitive to differential privacy, with significant drops in accuracy for any positive epsilon value.
