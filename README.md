@@ -99,3 +99,41 @@ Explainable AI (XAI) addresses issues of transparency and trust in AI by providi
 Both methods offer valuable insights into AI decision-making, with Proto-PNet providing more humanly interpretable features. The quantitative validation strategies help in assessing the consistency and reliability of the explanations provided by these XAI methods.
 
 **GitHub Repository:** [Explainable AI](https://github.com/DrJupiter/2ResponsibleAI)
+### Project 3: Differential Privacy in AI
+
+**Objective:**
+This project applies differential privacy techniques to the MNIST dataset to protect sensitive information while enabling effective statistical analysis. Both regression and classification tasks are performed, with Laplacian noise added to target labels according to different epsilon (ϵ) levels.
+
+**Introduction:**
+Differential Privacy (DP) is used to ensure data privacy while allowing data analysis. This project focuses on applying DP to the MNIST dataset, which consists of handwritten digits, by adding noise to target labels and assessing the impact on regression and classification tasks.
+
+**Dataset:**
+The MNIST dataset contains 70,000 grayscale images of handwritten digits (0-9), each 28x28 pixels. The dataset is split into 60,000 training images and 10,000 test images.
+
+**Method:**
+1. **Calculating ϵ:**
+   - For regression, labels are numeric (0-9), and the sensitivity (Δf) is 9.
+   - For classification, labels are one-hot encoded, and Δf is 2.
+   - The scale (b) for the Laplacian noise is calculated as Δf/ϵ.
+
+2. **Model:**
+   - Simple neural networks are used, with a logit layer for classification and a linear layer for regression.
+   - The models were trained and tested with added noise to evaluate the impact on performance.
+
+**Results:**
+1. **Regression:**
+   - The model exhibited overfitting, with Mean Squared Error (MSE) on the test data logged after each epoch.
+   - Higher epsilon levels showed significant impact on MSE.
+
+2. **Classification:**
+   - The model's accuracy on the test data dropped significantly with any ϵ > 0, showing high sensitivity to noise.
+   - Cross-entropy loss was used as the training metric, logged every 10K steps.
+
+**Conclusion:**
+- **Classification Task:** Highly sensitive to differential privacy, with significant drops in accuracy for any positive epsilon value.
+- **Regression Task:** More robust, requiring an ϵ > 1.5 to see a notable increase in MSE.
+- Overall, classification tasks are less robust to differential privacy approaches compared to regression tasks.
+
+**GitHub Repository:** [Privacy in Machine Learning](https://github.com/DrJupiter/Responsible-3)
+
+**Interactive Results:** [WandB Interactive Results](https://wandb.ai/klausjupiter/responsibleai-3)
