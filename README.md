@@ -65,7 +65,7 @@ A bias mitigation technique was applied to address sufficiency for the origin ca
 **Conclusion:**
 The project highlighted the presence of bias in the model's predictions, particularly concerning gender and origin. The implemented bias mitigation technique did not yield the desired improvement in fairness, suggesting the need for further analysis and debugging.
 
-**GitHub Repository:** [Responsible-AI-1](https://github.com/DrJupiter/Responsible-Ai-1)
+**GitHub Repository:** [Bias Mitigation](https://github.com/DrJupiter/Responsible-Ai-1)
 
 ### Project 2: Explainable AI (XAI) - Saliency Maps and Prototype-based Bottleneck Models
 
@@ -98,3 +98,4 @@ Explainable AI (XAI) addresses issues of transparency and trust in AI by providi
 **Conclusion:**
 Both methods offer valuable insights into AI decision-making, with Proto-PNet providing more humanly interpretable features. The quantitative validation strategies help in assessing the consistency and reliability of the explanations provided by these XAI methods.
 
+**GitHub Repository:** [Explainable AI](https://github.com/DrJupiter/2ResponsibleAI)
