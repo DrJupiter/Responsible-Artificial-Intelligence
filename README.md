@@ -1,5 +1,7 @@
 ### Course Overview: Responsible AI
 
+Course website: https://sites.google.com/view/responsible-ai-course?pli=1
+
 **General Course Objectives**
 
 This course introduces students to ethical challenges in AI and provides tools to understand and address them. Key topics include:
